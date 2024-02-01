@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI SHOP</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+<style>
+    body {
+        background-color: #f8f9fa;
+    }
+    .navbar {
+        background-color: #007bff;
+        color: white;
+    }
+    input{
+        margin-left: 300px;
+        width: 1000px;
+    }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-light">
+<h1 class="navbar-brand" href="#"><strong>AI SHOP</strong></h1>
+<form class="form-inline my-2 my-lg-0"><br><br><br><br><br><br>
+    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-dark sm-0" type="submit">Search</button>
+</form>
+<div style="margin-left: 70px;">
+    <a class="navbar-brand" href="#">
+    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-basket-fill" viewBox="0 0 16 16">
+        <path d="M5.071 1.243a.5.5 0 0 1 .858.514L3.383 6h9.234L10.07 1.757a.5.5 0 1 1 .858-.514L13.783 6H15.5a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5H15v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9H.5a.5.5 0 0 1-.5-.5v-2A.5.5 0 0 1 .5 6h1.717zM3.5 10.5a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0zm2.5 0a.5.5 0 1 0-1 0v3a.5.5 0 0 0 1 0z"/>
+        </svg>
+        <p>shopping</p>
+        <p><strong>all your which</strong></p>
+    </a>
+</div>
+<button class="btn btn-info" id="btn-aide" style="margin-left: 90px;">Aide</button>
+<button class="btn btn-warning catalog">Catalog</button>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+    <div class="col-md-3">
+        <div class="card">
+        <img src="hi.jpg" class="card-img-top" alt="Product 1" height="180px">
+        <div class="card-body">
+            <p class="card-text"><em>girly and fancy look for all women</em> </p>
+            <p class="card-text">Category: woman</p>
+            <p class="card-text">19.99</p>
+            <button class="btn btn-primary add-to-cart" data-product="Product 1">Add to Cart</button>
+            <button class="btn btn-secondary">Details</button>
+        </div>
+</div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+        <img src="HELLO.jpg" class="card-img-top" alt="Product 1" height="180px">
+        <div class="card-body">
+            <p class="card-text"><em>girly and casual look for all women</em> </p>
+            <p class="card-text">Category: woman</p>
+            <p class="card-text">9.99</p>
+            <button class="btn btn-primary add-to-cart" data-product="Product 1">Add to Cart</button>
+            <button class="btn btn-dark" id="btn2">Details</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+        <img src="BA.jpg" class="card-img-top" alt="Product 1" height="180px">
+        <div class="card-body">
+            <p class="card-text"><em>Rosy dark skirt</em> </p>
+            <p class="card-text">Category: woman</p>
+            <p class="card-text">29.99</p>
+            <button class="btn btn-primary add-to-cart" data-product="Product 1">Add to Cart</button>
+            <button class="btn btn-success">Details</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">My Cart</h5>
+            <p>Total Added Products: <span id="total-products">$0</span></p>
+            <p id="cart-price">Price: $0</p>
+            <p id="delivery-charge">Delivery Charge: $20</p>
+            <p id="total-tax">Total Tax: $0</p>
+            <p id="total">Total: $0</p>
+
+            <button class="btn btn-primary by-now" style="margin-left: 50px;">Buy Now</button>
+                
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+<div class="container mt-4">
+    <div class="row">
+    <div class="col-md-3">
+        <div class="card">
+        <img src="hh.jpg" class="card-img-top" alt="Product 1" height="180px">
+        <div class="card-body">
+            <p class="card-text"><em>girly and fancy look for all women</em> </p>
+            <p class="card-text">Category: woman</p>
+            <p class="card-text">8.99</p>
+            <button class="btn btn-primary add-to-cart" data-product="Product 1">Add to Cart</button>
+            <button class="btn btn-secondary">Details</button>
+        </div>
+</div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+        <img src="ki.jpg" class="card-img-top" alt="Product 1" height="180px">
+        <div class="card-body">
+            <p class="card-text"><em>green dress</em> </p>
+            <p class="card-text">Category: woman</p>
+            <p class="card-text">90.99</p>
+            <button class="btn btn-primary add-to-cart" data-product="Product 1">Add to Cart</button>
+            <button class="btn btn-dark" id="btn2">Details</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+        <img src="l.jpg" class="card-img-top" alt="Product 1" height="180px">
+        <div class="card-body">
+            <p class="card-text"><em>Rosy blue skirt</em> </p>
+            <p class="card-text">Category: woman</p>
+            <p class="card-text">2.99</p>
+            <button class="btn btn-primary add-to-cart" data-product="Product 1">Add to Cart</button>
+            <button class="btn btn-success">Details</button>
+        </div>
+    </div>
+    </div>
+    <div class="col-md-3">
+        <div class="card">
+        <div class="card-body">
+            <h5 class="card-title">My Cart</h5>
+            <p>Total Added Products: <span id="total-products">0</span></p>
+            <p id="cart-price">Price: 0</p>
+            <p id="delivery-charge">Delivery Charge: 20</p>
+            <p id="total-tax">Total Tax: 0</p>
+            <p id="total">Total: 0</p>
+
+            <button class="btn btn-primary by-now" style="margin-left: 50px;">Buy Now</button>
+                
+        </div>
+        </div>
+    </div>
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function() {
+    let totalProducts = 0;
+    let price = 0;
+    let deliveryCharge = 20;
+    let totalTax = 0;
+
+    $('.add-to-cart').on('click', function() {
+        totalProducts++;
+        $('#total-products').text(totalProducts);
+        let price = parseFloat($(this).data('price'));
+        total=+price
+        let productTax = parseFloat($(this).data('total-tax'));
+        price += price + deliveryCharge + productTax;
+        $('#cart-price').text('Price: $' + price);
+        $('#delivery-charge').text('Delivery Charge: $' + deliveryCharge);
+        $('#total-tax').text('Total Tax: $' + productTax);
+        $('#total').text('Total: $' + price);
+    });
+    $('.btn-secondary').on('click', function() {
+        alert('In the fast-paced rhythm of modern life, the allure of casual clothing has become more pronounced than ever. Casual wear not only offers comfort but also allows individuals to express their personal style in a relaxed and effortless manner. Lets delve into the world of casual fashion and explore an ensemble that seamlessly blends comfort and style.');
+    });
+    $('#btn2').on('click', function() {
+        alert('Rooted in the 19th century as durable workwear for miners and laborers, jeans were crafted from sturdy denim fabric to withstand the rigors of manual labor. Over the years, they evolved from utilitarian attire to a symbol of rebellion, counterculture, and ultimately, a mainstream fashion essential.');
+    });
+    $(' .btn-success').on('click', function() {
+        alert('Skirts, with their timeless charm and diverse styles, have long been a symbol of femininity and grace in the world of fashion. From casual daywear to sophisticated evening attire, skirts offer a versatile canvas for self-expression while effortlessly enhancing the wearer');
+    });
+    $('#btn-aide').on('click', function() {
+        window.location.href = 'aide.html';
+    });
+    $('.bt-ct').on('click', function() {
+        window.location.href = 'aide.html';
+    });
+    $('.by-now').on('click', function() {
+        window.location.href = 'buy.html';
+    });
+    $('.catalog').on('click', function() {
+        window.location.href = 'catalog.html';
+    });
+});
+</script>
+
+</body>
+</html>
